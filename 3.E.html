@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ page import="java.sql.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome to my First JSP Application</title>
+</head>
+<body>
+<form action="myfirstapplication.jsp" method="post">
+<label for="inputname">Enter your Name</label>
+<input type="text" name="username" required><br>
+<label for="inputpass">Enter your Password</label>
+<input type="text" name="password" required><br>
+<label for="selectcountry">Select your Country</label>
+<select name="country">
+<option value="India">India</option>
+<option value="US">US</option>
+<option value="UK">UK</option>
+</select><br>
+<label for="mark">Enter your Mark</label>
+<input type="text" name="mark" required><br>
+<input type="submit" name="submit" value="submit"><br>
+</form>
+</body>
+</html>
+
+<%!

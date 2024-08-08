@@ -1,0 +1,19 @@
+lookupdict={'rt':'Retweet', 'dm':'direct message', "awsm": "awesome", "wel":"Dhanekula"}
+def lookupwords(inputtext):
+  words= inputtext.split()
+  newwords=[]
+  for word in words:
+                if word.lower() in lookupdict:
+                    word=lookupdict[word.lower()]
+                newwords.append(word)
+                newtext = "  ".join(newwords)
+  return newtext
+print(lookupwords ("RT, this is a retweeted awsm tweet by wel"))
+
+
+
+
+output:-
+
+
+RT,  this  is  a  retweeted  awesome  tweet  by  Dhanekula
